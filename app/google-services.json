@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "554105946498",
+    "project_id": "mobil-programlama-aeeb5",
+    "storage_bucket": "mobil-programlama-aeeb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554105946498:android:2daa99686eaea6eb5e8f9b",
+        "android_client_info": {
+          "package_name": "com.example.netflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554105946498-bjcsghe4l5ossk13vocbo2rua3d8r2vl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvvQJQVatvyiW_tTR-yGwJCVn0drUQINY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554105946498-bjcsghe4l5ossk13vocbo2rua3d8r2vl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/netflix_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/netflix_logo">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/netflix_logo">
+
+        <Button
+            android:id="@+id/kayitButton"
+            android:layout_width="306dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/netflix_red"
+            android:text="Kayıt ol"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"
+            app:layout_constraintVertical_bias="0.206" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="364dp"
+            android:background="@drawable/login_username"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Kullanıcı adı veya mail"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/username" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/login_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/password" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="306dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/netflix_red"
+            android:text="Giriş yap"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintVertical_bias="0.326" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
